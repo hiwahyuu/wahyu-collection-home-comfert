@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeComfort Store | Peralatan Tidur & Rumah Tangga</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+    <div class="nav-container">
+        <a href="#top" class="logo">
+            <i class="fas fa-moon"></i>
+            <span>HomeComfort</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="mainNav">
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Beranda</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#location">Lokasi & Pengiriman</a></li>
+                <li><a href="#cart-section">Keranjang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <button class="cart-icon" aria-label="Keranjang">
+            <i class="fas fa-shopping-bag"></i>
+            <span id="cartCount">0</span>
+        </button>
+    </div>
+</header>
+
+<main id="top">
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+        <div class="hero-content">
+            <p class="eyebrow">Toko Peralatan Tidur & Rumah Tangga</p>
+            <h1>Buat kamar lebih <span>hangat</span> & <span>nyaman</span> setiap malam.</h1>
+            <p>Nikmati koleksi sprei, selimut, bantal, guling, bed cover, karpet, dan gorden estetik dengan bahan lembut dan warna yang menenangkan.</p>
+
+            <div class="hero-actions">
+                <a href="#products" class="btn btn-primary">
+                    <i class="fas fa-store"></i>
+                    Belanja Sekarang
+                </a>
+                <a href="#location" class="btn btn-outline">
+                    <i class="fas fa-location-dot"></i>
+                    Cek Pengiriman
+                </a>
+            </div>
+
+            <div class="hero-badges">
+                <span><i class="fas fa-feather"></i> Bahan lembut & adem</span>
+                <span><i class="fas fa-leaf"></i> Ramah kulit sensitif</span>
+                <span><i class="fas fa-truck-fast"></i> Pengiriman cepat</span>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="hero-card">
+                <img src="https://images.pexels.com/photos/545012/pexels-photo-545012.jpeg?auto=compress&cs=tinysrgb&w=800"
+                     alt="Kasur dengan sprei dan selimut aesthetic" />
+                <div class="hero-card-text">
+                    <p>Paket Cozy Night</p>
+                    <h2>Sprei + Selimut + 2 Bantal + Guling</h2>
+                    <p class="hero-price">Mulai <strong>Rp 650K</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section">
+        <h2><i class="fas fa-bed"></i> Koleksi Utama</h2>
+        <p class="section-subtitle">Pilih kebutuhan tidurmu. Semua harga sudah termasuk bonus free gift kecil.</p>
+
+        <!-- SEARCH BAR PRODUK -->
+        <div class="form full-width" style="margin-bottom: 10px;">
+            <div class="form-group full-width">
+                <label for="productSearch">Cari produk (nama / kategori)</label>
+                <input type="text" id="productSearch" placeholder="Contoh: sprei, guling, karpet..." />
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <!-- Sprei -->
+            <article class="product-card" data-name="Sprei Katun Premium" data-price="250000">
+                <div class="product-image">
+                    <img src="https://images.pexels.com/photos/37347/bed-bedroom-bedside-blanket.jpg?auto=compress&cs=tinysrgb&w=800"
+                         alt="Sprei katun premium motif minimalis" />
+                    <span class="product-tag">Best Seller</span>
+                </div>
+                <h3>Sprei Katun Premium</h3>
+                <p>Sprei lembut dengan motif minimalis, cocok untuk kamar aesthetic.</p>
+                <p class="product-meta">Ukuran: 160x200 & 180x200</p>
+                <p class="product-price">Rp 250.000</p>
+                <button class="btn btn-small btn-primary add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Tambah
+                </button>
+            </article>
+
+            <!-- Selimut -->
+            <article class="product-card" data-name="Selimut Fleece Hangat" data-price="220000">
+                <div class="product-image">
+                    <img src="https://images.pexels.com/photos/4046164/pexels-photo-4046164.jpeg?auto=compress&cs=tinysrgb&w=800"
+                         alt="Selimut fleece lembut warna netral" />
+                    <span class="product-tag">Baru</span>
+                </div>
+                <h3>Selimut Fleece Hangat</h3>
+                <p>Selimut tebal tapi ringan, ideal untuk ruangan ber-AC.</p>
+                <p class="product-meta">Pilihan warna: cream, grey, latte</p>
+                <p class="product-price">Rp 220.000</p>
+                <button class="btn btn-small btn-primary add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Tambah
+                </button>
+            </article>
+
+            <!-- Bantal -->
+            <article class="product-card" data-name="Bantal Microfiber Anti-Pegal" data-price="120000">
+                <div class="product-image">
+                    <img src="https://images.pexels.com/photos/545013/pexels-photo-545013.jpeg?auto=compress&cs=tinysrgb&w=800"
+                         alt="Bantal putih empuk" />
+                    <span class="product-tag">Comfort+</span>
+                </div>
+                <h3>Bantal Microfiber Anti-Pegal</h3>
+                <p>Bantal empuk dengan support leher yang nyaman untuk tidur panjang.</p>
+                <p class="product-meta">Isi: 1 pcs / pack</p>
+                <p class="product-price">Rp 120.000</p>
+                <button class="btn btn-small btn-primary add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Tambah
+                </button>
+            </article>
+
+            <!-- Guling -->
+            <article class="product-card" data-name="Guling Peluk Cloud" data-price="140000">
+                <div class="product-image">
+                    <img src="https://images.pexels.com/photos/6585762/pexels-photo-6585762.jpeg?auto=compress&cs=tinysrgb&w=800"
+                         alt="Guling putih panjang di kasur" />
+                    <span class="product-tag">Favorit</span>
+                </div>
+                <h3>Guling Peluk Cloud</h3>
+                <p>Guling panjang yang empuk untuk dipeluk, bikin tidur makin nyenyak.</p>
+                <p class="product-meta">Panjang 90cm, cover bisa dicuci</p>
+                <p class="product-price">Rp 140.000</p>
+                <button class="btn btn-small btn-primary add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Tambah
+                </button>
+            </article>
+
+            <!-- Bed Cover -->
+            <article class="product-card" data-name="Bed Cover Quilted" data-price="380000">
+                <div class="product-image">
+                    <img src="https://images.pexels.com/photos/6587902/pexels-photo-6587902.jpeg?auto=compress&cs=tinysrgb&w=800"
+                         alt="Bed cover motif modern" />
+                    <span class="product-tag">Hotel Vibes</span>
+                </div>
+                <h3>Bed Cover Quilted</h3>
+                <p>Bed cover motif modern, memberikan sentuhan hotel vibe di kamar.</p>
+                <p class="product-meta">Include 2 sarung bantal</p>
+                <p class="product-price">Rp 380.000</p>
+                <button class="btn btn-small btn-primary add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Tambah
+                </button>
+            </article>
+
+            <!-- Paket Lengkap -->
+            <article class="product-card" data-name="Paket Lengkap Kamar" data-price="750000">
+                <div class="product-image">
+                    <img src="https://images.pexels.com/photos/6585769/pexels-photo-6585769.jpeg?auto=compress&cs=tinysrgb&w=800"
+                         alt="Set lengkap sprei dan selimut" />
+                    <span class="product-tag">Paling Hemat</span>
+                </div>
+                <h3>Paket Lengkap Kamar</h3>
+                <p>Sprei + selimut + 2 bantal + 1 guling, tinggal pasang dan tidur.</p>
+                <p class="product-meta">Pilihan warna: dawn, night, dusty pink</p>
+                <p class="product-price">Rp 750.000</p>
+                <button class="btn btn-small btn-primary add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Tambah
+                </button>
+            </article>
+
+            <!-- Gorden -->
+            <article class="product-card" data-name="Gorden Blackout Aesthetic" data-price="310000">
+                <div class="product-image">
+                    <img src="https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&w=800"
+                         alt="Gorden tebal warna gelap di kamar" />
+                    <span class="product-tag">Ruangan Redup</span>
+                </div>
+                <h3>Gorden Blackout Aesthetic</h3>
+                <p>Gorden tebal yang mampu meredam cahaya, bikin kamar lebih cozy.</p>
+                <p class="product-meta">Panjang 250cm, set 2 lembar</p>
+                <p class="product-price">Rp 310.000</p>
+                <button class="btn btn-small btn-primary add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Tambah
+                </button>
+            </article>
+
+            <!-- Karpet -->
+            <article class="product-card" data-name="Karpet Bulu Lembut" data-price="260000">
+                <div class="product-image">
+                    <img src="https://images.pexels.com/photos/6585763/pexels-photo-6585763.jpeg?auto=compress&cs=tinysrgb&w=800"
+                         alt="Karpet bulu lembut di lantai kamar" />
+                    <span class="product-tag">Lantai Nyaman</span>
+                </div>
+                <h3>Karpet Bulu Lembut</h3>
+                <p>Karpet bulu lembut untuk area samping kasur atau ruang santai.</p>
+                <p class="product-meta">Ukuran 120x180, anti-slip</p>
+                <p class="product-price">Rp 260.000</p>
+                <button class="btn btn-small btn-primary add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Tambah
+                </button>
+            </article>
+
+            <!-- Sarung Bantal -->
+            <article class="product-card" data-name="Sarung Bantal Motif" data-price="85000">
+                <div class="product-image">
+                    <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=800"
+                         alt="Sarung bantal motif garis dan polos" />
+                    <span class="product-tag">Mix & Match</span>
+                </div>
+                <h3>Sarung Bantal Motif</h3>
+                <p>Sarung bantal motif garis dan polos untuk variasi dekorasi kasur.</p>
+                <p class="product-meta">Set isi 2 pcs</p>
+                <p class="product-price">Rp 85.000</p>
+                <button class="btn btn-small btn-primary add-to-cart">
+                    <i class="fas fa-cart-plus"></i> Tambah
+                </button>
+            </article>
+        </div>
+    </section>
+
+    <!-- LOCATION & SHIPPING -->
+    <section id="location" class="section section-soft">
+        <h2><i class="fas fa-location-dot"></i> Cek Pengiriman</h2>
+        <p class="section-subtitle">Masukkan kota kamu untuk estimasi ongkir & waktu kirim.</p>
+
+        <div class="location-grid">
+            <form id="shippingForm" class="form">
+                <div class="form-group full-width">
+                    <label for="buyerName">Nama Penerima</label>
+                    <input type="text" id="buyerName" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Kota / Kabupaten</label>
+                    <input type="text" id="city" placeholder="Contoh: Depok, Yogyakarta" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="postal">Kode Pos</label>
+                    <input type="text" id="postal" required />
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="fullAddress">Alamat Lengkap</label>
+                    <textarea id="fullAddress" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="shippingMethod">Metode Pengiriman</label>
+                    <select id="shippingMethod">
+                        <option value="reg">Reguler (2–4 hari)</option>
+                        <option value="yes">YES (1–2 hari)</option>
+                        <option value="same">Same Day (kota tertentu)</option>
+                    </select>
+                </div>
+
+                <div class="form-actions full-width">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-calculator"></i>
+                        Hitung Estimasi
+                    </button>
+                </div>
+            </form>
+
+            <div class="map-preview">
+                <h3>Perkiraan Area Jangkauan</h3>
+                <p>Gudang utama di Jakarta, pengiriman ke seluruh Indonesia via kurir rekanan.</p>
+                <iframe
+                    src="https://maps.google.com/maps?q=jakarta&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="230" style="border:0;" loading="lazy"></iframe>
+                <p class="map-note">Estimasi detail akan dikirim lewat WhatsApp setelah checkout.</p>
+            </div>
+        </div>
+
+        <div id="shippingResult" class="alert" aria-live="polite"></div>
+    </section>
+
+    <!-- CART & SUMMARY -->
+    <section id="cart-section" class="section">
+        <h2><i class="fas fa-shopping-cart"></i> Ringkasan Keranjang</h2>
+        <p class="section-subtitle">Cek lagi produk yang mau dibeli sebelum konfirmasi.</p>
+
+        <div class="cart-layout">
+            <div class="cart-items">
+                <p id="emptyCartText">Keranjang masih kosong. Tambahkan produk dari bagian koleksi.</p>
+                <ul id="cartList"></ul>
+            </div>
+
+            <div class="cart-summary">
+                <h3>Total</h3>
+                <p class="cart-summary-line">
+                    Subtotal: <span id="cartSubtotal">Rp 0</span>
+                </p>
+                <p class="cart-summary-line">
+                    Est. Ongkir: <span id="cartShipping">Rp 0</span>
+                </p>
+                <p class="cart-summary-line cart-total">
+                    Total Bayar: <span id="cartTotal">Rp 0</span>
+                </p>
+
+                <button id="checkoutBtn" class="btn btn-primary" disabled>
+                    <i class="fas fa-credit-card"></i>
+                    Lanjut Konfirmasi
+                </button>
+
+                <button id="whatsAppBtn" class="btn btn-outline">
+                    <i class="fab fa-whatsapp"></i>
+                    Kirim Detail ke WhatsApp
+                </button>
+
+                <p class="checkout-note">
+                    Ini simulasi checkout (tanpa pembayaran otomatis). Kamu bisa kirim ringkasan pesanan ke WhatsApp admin untuk proses lanjut.
+                </p>
+            </div>
+        </div>
+
+        <div id="checkoutAlert" class="alert" aria-live="polite"></div>
+    </section>
+
+    <!-- CONTACT & FOOTER INFO -->
+    <section id="contact" class="section section-soft">
+        <h2><i class="fas fa-headset"></i> Kontak & Sosial Media</h2>
+        <p class="section-subtitle">Butuh bantuan ukuran, warna, atau stok? Hubungi kami.</p>
+
+        <div class="contact-layout">
+            <div>
+                <h3>Customer Care</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone"></i> 0812-0000-0000 (WA & Telp)</li>
+                    <li><i class="fas fa-envelope"></i> support@homecomfort.id</li>
+                    <li><i class="fas fa-clock"></i> Jam layanan: 09.00 – 21.00 WIB</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Sosial Media & Marketplace</h3>
+                <div class="social-row">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram @homecomfort.id</a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i> TikTok @homecomfort.id</a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i> YouTube HomeComfort</a>
+                    <a href="#" aria-label="Shopee"><i class="fas fa-bag-shopping"></i> Shopee: HomeComfort Official</a>
+                    <a href="#" aria-label="Tokopedia"><i class="fas fa-store"></i> Tokopedia: HomeComfort Official</a>
+                    <a href="https://wa.me/6281200000000" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Chat Langsung
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section section-soft">
+        <h2><i class="fas fa-envelope-open-text"></i> Dapatkan Info Diskon</h2>
+        <p class="section-subtitle">Masukkan email untuk mendapat info promo bundle, diskon musiman, dan tips merawat peralatan tidur.</p>
+
+        <form id="newsletterForm" class="form">
+            <div class="form-group full-width">
+                <label for="newsletterEmail">Email Kamu</label>
+                <input type="email" id="newsletterEmail" placeholder="nama@email.com" />
+            </div>
+            <div class="form-actions full-width">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Daftar Sekarang
+                </button>
+            </div>
+        </form>
+
+        <div id="newsletterAlert" class="alert" aria-live="polite"></div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <i class="fas fa-moon"></i>
+                <span>HomeComfort</span>
+            </div>
+            <p>Toko peralatan tidur & rumah tangga dengan nuansa cozy dan aesthetic. Bantu kamu tidur lebih nyenyak setiap malam.</p>
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-col">
+                <h4>Jelajahi</h4>
+                <a href="#hero">Beranda</a>
+                <a href="#products">Produk</a>
+                <a href="#location">Cek Pengiriman</a>
+                <a href="#cart-section">Keranjang</a>
+                <a href="#contact">Kontak</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Sosial Media</h4>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+                <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="https://wa.me/6281200000000" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Marketplace</h4>
+                <a href="#"><i class="fas fa-bag-shopping"></i> Shopee Official</a>
+                <a href="#"><i class="fas fa-store"></i> Tokopedia Official</a>
+                <a href="#"><i class="fas fa-cart-shopping"></i> Lazada Store</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 HomeComfort Store • Crafted with cozy dark vibes</p>
+        <div class="footer-bottom-links">
+            <a href="#">Kebijakan Privasi</a>
+            <span>•</span>
+            <a href="#">Syarat & Ketentuan</a>
+        </div>
+    </div>
+</footer>
+
+
+<button id="backToTop" aria-label="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
